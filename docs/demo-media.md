@@ -20,15 +20,15 @@ GIF 可直接观看，但它本身没有暂停、切换场景等交互按钮。G
 
 ## 完整操作：GitHub Pages
 
-演示网页源码保存在 `demo/`，由 `npm run build:demo` 生成可独立托管的 `dist/site/`。托管目标是这个项目仓库的 **GitHub Pages**，通过已有的 [Pages 工作流](../.github/workflows/pages.yml)发布。
+演示网页源码保存在 `demo/`，由 `npm run build:demo` 生成可独立托管的 `dist/site/`，已通过 [Pages 工作流](../.github/workflows/pages.yml)发布到本仓库的 **GitHub Pages**。
 
-如果使用账号 `ringing-0619`、仓库名 `resume-refill`，默认域名且不设置自定义域名，预计交互入口为：
+公开交互入口为：[打开 Resume Refill 在线演示](https://ringing-0619.github.io/resume-refill/demo/)。
 
 ```text
 https://ringing-0619.github.io/resume-refill/demo/
 ```
 
-**这是计划地址，尚未部署和验证，不能当作当前可访问的链接。** 最终以 GitHub 部署成功后返回的地址为准。发布后将入口加入两份 README 的 Demo 段落，并设置为仓库 Website；还可把动图包装成指向该入口的链接。
+两份 README 的 Demo 段落与动图均链接到这个入口，仓库 Website 也指向该演示。后续更新演示代码时，推送后手动运行 Pages 工作流，等待部署成功再验证页面。
 
 访客从 README 点击公开入口后，可在自己的浏览器中重新演示填写、暂停 / 继续、调整速度、切换三种场景、选择简历版本及编辑虚构资料，无需安装插件或连接开发者电脑。网页使用静态文件和标签页内存适配层；不会连接真实招聘平台，也不会读取已安装插件的真实简历。
 
@@ -45,4 +45,4 @@ GitHub Pages 可托管 HTML、CSS 和 JavaScript，参见 [GitHub Pages 官方�
 
 Both READMEs embed the same real browser GIF from `docs/images/`. It shows the original purple interface filling a fictional form one field at a time. The 21.1-second loop uses the intentionally paced demo engine; production extension timing is unchanged.
 
-The interactive HTML/CSS/JavaScript demo is prepared for GitHub Pages. It runs in the visitor's browser without installing the extension, using fictional data in tab memory. The public URL remains a plan until deployment succeeds and the returned URL has been verified. Preparing the files does not publish a repository or deploy a website.
+The interactive HTML/CSS/JavaScript demo is [live on GitHub Pages](https://ringing-0619.github.io/resume-refill/demo/). It runs in the visitor's browser without installing the extension, using fictional data in tab memory. Both READMEs and their GIF link to this public demo. After future source changes, run the manual Pages workflow to update the deployed site.

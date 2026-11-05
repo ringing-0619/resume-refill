@@ -1,6 +1,6 @@
 # GitHub publishing / 上传与展示
 
-The prepared files are local. No GitHub repository or public demo is created by preparing this folder.
+The project is published at [ringing-0619/resume-refill](https://github.com/ringing-0619/resume-refill), with English `README.md` as the default repository overview. The interactive demo is [live on GitHub Pages](https://ringing-0619.github.io/resume-refill/demo/). The steps below document initial publishing and future redeployment.
 
 ## Suggested repository presentation
 

@@ -15,13 +15,13 @@
 
 ## Demo 展示
 
-![真实浏览器录制：原版紫色插件将虚构简历逐项填入模拟网申表单](docs/images/resume-refill-demo.gif)
+[![真实浏览器录制：原版紫色插件将虚构简历逐项填入模拟网申表单](docs/images/resume-refill-demo.gif)](https://ringing-0619.github.io/resume-refill/demo/)
 
 **直接观看上方动图：**真实录制原版紫色弹窗及填写引擎的运行过程。演示特意放慢至约 **1 秒 / 项**，方便看清每次写入和校验；插件本体速度保持原样。候选人和公司资料均为虚构。
 
-**亲自操作：**[演示指南与本地启动方式](docs/demo-guide.md)。支持重新演示自动填写、暂停 / 继续、调整速度、切换三种表单场景，以及在原版资料页编辑简历版本。
+**亲自操作：**[打开在线演示](https://ringing-0619.github.io/resume-refill/demo/) · [演示指南](docs/demo-guide.md)。支持重新演示自动填写、暂停 / 继续、调整速度、切换三种表单场景，以及在原版资料页编辑简历版本。
 
-完整交互 demo 已准备好通过 **GitHub Pages** 托管，部署并验证后会在此加入公开入口。README 内直接播放 GIF，按钮交互则在独立演示页中运行。[动图与托管方案](docs/demo-media.md)
+完整交互 demo 已通过 **GitHub Pages** 托管，可在访客自己的浏览器中运行，无需安装插件。点击上方动图即可进入；README 内直接播放 GIF，按钮交互则在演示页中运行。[动图与托管方案](docs/demo-media.md)
 
 ## 项目内容
 

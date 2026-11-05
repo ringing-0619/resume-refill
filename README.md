@@ -15,13 +15,13 @@ A local-first **Chrome extension** that manages resume versions and fills job ap
 
 ## Demo
 
-![Real browser recording: the original purple extension fills a fictional application one field at a time](docs/images/resume-refill-demo.gif)
+[![Real browser recording: the original purple extension fills a fictional application one field at a time](docs/images/resume-refill-demo.gif)](https://ringing-0619.github.io/resume-refill/demo/)
 
 **Watch directly above:** a real browser recording of the original purple popup and filling engine. The demo intentionally pauses about **one second per field** so each write and verification is visible; the extension's own timing is unchanged. All candidate and company data is fictional.
 
-**Try it interactively:** [Demo walkthrough and local launch](docs/demo-guide.md). Replay autofill, pause/resume, change speed, switch three form scenarios, or edit a resume version in the original profile manager.
+**Try it interactively:** [Open the live demo](https://ringing-0619.github.io/resume-refill/demo/) · [Demo walkthrough](docs/demo-guide.md). Replay autofill, pause/resume, change speed, switch three form scenarios, or edit a resume version in the original profile manager.
 
-The interactive demo is prepared for **GitHub Pages**; a verified public link will be added here after deployment. The GIF plays inside the README, while interactive controls run on the separate demo page. [Demo media and hosting](docs/demo-media.md)
+The interactive version is hosted on **GitHub Pages** and runs in the visitor's browser without installing the extension. Click the GIF above to open it. The animation plays inside the README; interactive controls run on the demo page. [Demo media and hosting](docs/demo-media.md)
 
 ## Explore the project
 

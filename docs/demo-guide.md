@@ -1,5 +1,7 @@
 # Demo walkthrough / 原版插件演示指南
 
+Open the [public interactive demo / 在线交互演示](https://ringing-0619.github.io/resume-refill/demo/) in any supported browser. It does not require the extension or a connection to the developer's computer.
+
 Run `npm run demo` from the repository root and open `http://127.0.0.1:4173/demo/`. On macOS, double-click `start-demo.command` in Finder to launch the server and open Chrome. It selects another port if needed; use the URL it opens. Double-click `stop-demo.command` to stop the background server. Node.js 22.14+ is required. Opening the HTML directly is not supported.
 
 The demo directly loads the extension's original **popup, profile manager, CSS and JavaScript**. It preserves the purple interface and original Chinese labels. Only the surrounding explanation and mock recruiting form switch languages. Browser APIs use a fictional in-memory adapter; the installed extension's real profiles are never accessed.
@@ -41,7 +43,7 @@ Open the original profile manager through the gear or **Manage resume profiles**
 
 The mock domain is a visual label, not a real destination. The demo has no submission endpoint. Platform fixtures demonstrate selected observed patterns, not universal compatibility.
 
-Both READMEs embed a [real browser GIF](images/resume-refill-demo.gif) of this original-UI demo filling the standard fictional form one field at a time. See [media and hosting](demo-media.md) for recording details and the planned GitHub Pages entry point. The profile-manager screenshot is available [here](images/resume-refill-original-settings-v3.jpg).
+Both READMEs embed a [real browser GIF](images/resume-refill-demo.gif) of this original-UI demo filling the standard fictional form one field at a time. See [media and hosting](demo-media.md) for recording details and the public GitHub Pages entry point. The profile-manager screenshot is available [here](images/resume-refill-original-settings-v3.jpg).
 
 ## Playback timing
 
