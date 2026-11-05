@@ -1,0 +1,15 @@
+node_modules/
+.demo-runtime/
+dist/
+.DS_Store
+Thumbs.db
+*.log
+coverage/
+test-results/
+playwright-report/
+.env
+.env.*
+!.env.example
+tmp/
+private/
+*resume-backup*.json

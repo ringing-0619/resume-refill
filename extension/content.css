@@ -1,0 +1,16 @@
+.resume-helper-match {
+  outline: 2px solid #7657ff !important;
+  outline-offset: 2px !important;
+  transition: outline-color 160ms ease, box-shadow 160ms ease !important;
+}
+
+.resume-helper-filled {
+  outline: 2px solid #17a673 !important;
+  outline-offset: 2px !important;
+  box-shadow: 0 0 0 4px rgba(23, 166, 115, 0.12) !important;
+}
+
+.resume-helper-skipped {
+  outline: 2px solid #d28c22 !important;
+  outline-offset: 2px !important;
+}

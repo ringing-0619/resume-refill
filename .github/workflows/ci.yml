@@ -1,0 +1,24 @@
+name: Check and test
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - run: npm run check
+      - run: npm test
+      - run: npm run build:demo
+      - run: npm run package
+      - uses: actions/upload-artifact@v7
+        with:
+          name: resume-refill-extension
+          path: dist/resume-refill-extension-*.zip

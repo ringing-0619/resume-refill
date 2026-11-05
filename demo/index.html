@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Resume Refill 产品演示：直接使用原插件的弹窗、资料管理界面和填充引擎，配合虚构资料与模拟网申表单。">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; frame-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'">
+  <title>Resume Refill · 原版插件交互演示</title>
+  <link rel="icon" href="../extension/icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="demo.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <div class="brand"><span class="brand-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 3.75h7.6L19 8.15v12.1H7z"/><path d="M14.5 3.9v4.5H19M9.8 12h6.4M9.8 15h6.4M9.8 18h3.8"/></svg></span><div><strong>Resume Refill <span>· 简历填充小助手</span></strong><small data-i18n="brandSubtitle">原版插件交互演示</small></div></div>
+      <div class="header-actions"><span class="sample-pill" data-i18n="sample">虚构样例资料</span><button id="language" type="button">English</button><button id="reset" type="button" data-i18n="reset">重置样例</button></div>
+    </header>
+    <div class="intro"><div><h1 data-i18n="title">从整理简历，到填写网申。</h1><p data-i18n="description">直接体验原插件的紫色弹窗和资料管理页，看看它如何处理重复填写。</p></div><p class="boundary" data-i18n="boundary">演示只使用本标签页内的虚构资料，不读取已安装插件中的真实资料。</p></div>
+    <nav class="view-tabs" aria-label="演示页面"><button id="fillView" type="button" class="active" aria-pressed="true" data-i18n="fillView">01 自动填写演示</button><button id="settingsView" type="button" aria-pressed="false" data-i18n="settingsView">02 简历资料管理</button><button id="runDemo" class="run-demo-button" type="button" data-i18n="runDemo" disabled>▶ 演示自动填写</button><a href="../examples/sample-resume.zh-CN.txt" download="sample-resume.zh-CN.txt" data-i18n="download">下载虚构 TXT 简历 ↗</a></nav>
+    <p class="demo-instruction" data-i18n="demoInstruction">点击「演示自动填写」，会重新生成空白模拟表单，再运行原插件的填充流程。使用当前已保存的简历版本。</p>
+    <div class="playback-options"><label for="demoSpeed" data-i18n="speedLabel">演示速度</label><select id="demoSpeed" aria-label="演示速度"><option value="1000" data-i18n="speedSlow">慢速 · 约 1 秒 / 项</option><option value="1600" data-i18n="speedSlower">更慢 · 约 1.6 秒 / 项</option><option value="0" data-i18n="speedOriginal">原速</option></select><span data-i18n="pacingNote">为方便观看，演示按页面顺序逐项放慢；插件本体速度不变。</span></div>
+    <div id="demoStatus" role="status" aria-live="polite" class="demo-status"></div>
+    <section id="fillWorkspace" class="workspace" aria-label="原版插件与模拟表单">
+      <div class="popup-column"><div class="surface-heading"><strong data-i18n="popupHeading">扩展弹窗</strong><span data-i18n="original">原项目 HTML · CSS · JS</span></div><div class="popup-card"><iframe id="popup" title="原版简历填充小助手弹窗"></iframe></div><p class="help" data-i18n="popupHelp">与安装后的插件一致：选择「本次使用」的简历版本，检查识别结果，再点击「一键填充」。点击齿轮或「管理」可打开资料页。</p></div>
+      <div class="form-column"><div class="surface-heading"><strong data-i18n="formHeading">模拟网申页面</strong><span data-i18n="fictional">虚构公司 · 不提交申请</span></div><div class="browser-shell"><div class="browser-toolbar"><div class="traffic-lights" aria-hidden="true"><i></i><i></i><i></i></div><div class="address">careers.example.test / application</div></div><div class="scenario-bar" role="group" aria-label="演示场景"><button data-scene="standard" type="button" class="active" aria-pressed="true" data-i18n="standard">标准表单</button><button data-scene="custom" type="button" aria-pressed="false" data-i18n="custom">自定义控件</button><button data-scene="review" type="button" aria-pressed="false" data-i18n="review">已有内容与必填确认</button></div><iframe id="application" title="虚构网申表单"></iframe></div></div>
+    </section>
+    <section id="settingsWorkspace" hidden><div class="surface-heading"><strong data-i18n="settingsHeading">原版简历资料管理页</strong><span data-i18n="settingsHint">编辑样例后点击「保存资料」，再返回填充演示</span></div><div class="settings-card"><iframe id="settings" title="原版简历资料管理页"></iframe></div></section>
+    <footer><span data-i18n="footer">界面与填写逻辑来自原插件；浏览器 API 由标签页内存适配层提供。插件本体保持原版中文，模拟表单可切换中英文。</span><a href="../docs/demo-guide.md" data-i18n="guide">演示指南 ↗</a></footer>
+    <div id="playbackHud" class="playback-hud" role="status" aria-live="polite" hidden><div><strong id="playbackTitle">正在逐项填写</strong><span id="playbackDetail"></span></div><button id="pauseDemo" type="button" aria-pressed="false">暂停</button></div>
+  </div>
+</body>
+</html>

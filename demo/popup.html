@@ -1,0 +1,90 @@
+<!-- Generated from the original extension HTML by scripts/prepare-demo.mjs. -->
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>简历填充小助手</title>
+    <link rel="stylesheet" href="../extension/popup.css" />
+    <link rel="stylesheet" href="surface.css">
+    <script src="extension-adapter.js"></script>
+  </head>
+  <body>
+    <main class="app">
+      <header class="header">
+        <div class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M7 3.75h7.6L19 8.15v12.1H7z"/><path d="M14.5 3.9v4.5H19M9.8 12h6.4M9.8 15h6.4M9.8 18h3.8"/></svg>
+        </div>
+        <div>
+          <h1>简历填充小助手</h1>
+          <p id="siteName">正在读取当前页面…</p>
+        </div>
+        <button id="openOptions" class="icon-button" title="编辑简历资料" aria-label="编辑简历资料">
+          <svg viewBox="0 0 24 24"><path d="M12 15.25A3.25 3.25 0 1 0 12 8.75a3.25 3.25 0 0 0 0 6.5Z"/><path d="M19.4 13.5c.06-.49.06-1.01 0-1.5l2-1.56-2-3.46-2.48 1a7.9 7.9 0 0 0-2.6-1.5L14 3.83h-4l-.32 2.65a7.9 7.9 0 0 0-2.6 1.5l-2.48-1-2 3.46L4.6 12a6.3 6.3 0 0 0 0 1.5l-2 1.56 2 3.46 2.48-1a7.9 7.9 0 0 0 2.6 1.5l.32 2.65h4l.32-2.65a7.9 7.9 0 0 0 2.6-1.5l2.48 1 2-3.46-2-1.56Z"/></svg>
+        </button>
+      </header>
+
+      <section class="profile-switcher">
+        <div><label for="profileVersionSelect">本次使用</label><small id="activeVersionSource">当前简历版本</small></div>
+        <select id="profileVersionSelect" aria-label="选择用于填充的简历版本"></select>
+        <button id="manageProfiles" type="button">管理</button>
+      </section>
+
+      <section id="emptyProfile" class="notice warning" hidden>
+        <span class="notice-icon">!</span>
+        <div><strong>还没有可填充的资料</strong><p>先完善基本信息，再回到网申页面。</p></div>
+        <button id="setupProfile" class="text-button">去填写</button>
+      </section>
+
+      <section id="statusCard" class="status-card" aria-live="polite">
+        <div id="statusVisual" class="status-visual scanning">
+          <svg class="scan-icon" viewBox="0 0 24 24"><path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M21 16v3a2 2 0 0 1-2 2h-3M8 21H5a2 2 0 0 1-2-2v-3M7 12h10"/></svg>
+        </div>
+        <div class="status-copy">
+          <h2 id="statusTitle">正在扫描表单结构</h2>
+          <p id="statusDescription">识别字段含义和页面控件类型</p>
+        </div>
+        <div id="fieldCount" class="field-count" hidden><strong>0</strong><span>个字段</span></div>
+      </section>
+
+      <section id="fieldPreview" class="preview" hidden>
+        <div class="section-heading">
+          <h2>识别结果</h2>
+          <span id="confidenceText">仅显示可识别字段</span>
+        </div>
+        <div id="fieldChips" class="field-chips"></div>
+        <p id="moreFields" class="more-fields" hidden></p>
+      </section>
+
+      <section id="resultBox" class="result-box" hidden aria-live="polite"></section>
+
+      <section id="requiredSuggestions" class="required-suggestions" hidden>
+        <div class="section-heading required-heading">
+          <div><h2>新增必填项</h2><span id="requiredCount">0 项</span></div>
+          <span>当前页面智能兜底</span>
+        </div>
+        <p class="required-intro">有可靠依据的内容会自动填写；其他内容请确认一次，之后同类问题可复用。</p>
+        <div id="requiredSuggestionList" class="required-list"></div>
+        <button id="applySuggestions" class="suggestion-button" disabled>确认并填写以上答案</button>
+      </section>
+
+      <label class="overwrite-row">
+        <span><strong>覆盖已有内容</strong><small>默认保留你已经填写的字段</small></span>
+        <span class="switch"><input id="overwriteExisting" type="checkbox" /><span></span></span>
+      </label>
+
+      <button id="fillButton" class="primary-button" disabled>
+        <svg viewBox="0 0 24 24"><path d="m13.2 2-8 11h6l-.4 9 8-12h-6z"/></svg>
+        <span>一键填充</span>
+      </button>
+      <button id="scanButton" class="secondary-button">重新扫描表单</button>
+
+      <footer>
+        <span><svg viewBox="0 0 24 24"><path d="M7 11V8a5 5 0 0 1 10 0v3M5 11h14v10H5z"/></svg>资料仅保存在本机</span>
+        <button id="editProfile">编辑简历资料</button>
+      </footer>
+    </main>
+    <script src="../extension/profile-schema.js"></script>
+    <script src="../extension/popup.js"></script>
+  </body>
+</html>

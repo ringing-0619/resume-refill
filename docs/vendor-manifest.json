@@ -1,0 +1,30 @@
+{
+  "note": "Bundled files preserved from the original working project. Hashes identify exact bytes; they are not independent provenance verification.",
+  "files": [
+    {
+      "file": "extension/vendor/mammoth/LICENSE",
+      "sha256": "6663bbd049205d38a496ccacb412a151980b444627d38de218b3b809aef330f1",
+      "bytes": 1307
+    },
+    {
+      "file": "extension/vendor/mammoth/mammoth.browser.min.js",
+      "sha256": "e660d427ddb9aaf51cf4ca237512d0776141a58f0dfb0fd58b576721e8195e2b",
+      "bytes": 636579
+    },
+    {
+      "file": "extension/vendor/pdfjs/LICENSE",
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+      "bytes": 10174
+    },
+    {
+      "file": "extension/vendor/pdfjs/pdf.min.mjs",
+      "sha256": "f80490490320511e5df18c580b9edd6b5db8058dceebaf6f161992e0a964b9e2",
+      "bytes": 458705
+    },
+    {
+      "file": "extension/vendor/pdfjs/pdf.worker.min.mjs",
+      "sha256": "8ab0e5e30031b4a06ecfddd5ae9562f0227f830ee7ec9ed1a968b134243d2386",
+      "bytes": 1265413
+    }
+  ]
+}

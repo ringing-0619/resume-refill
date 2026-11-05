@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self'; object-src 'self'; worker-src 'self'" />
+    <title>编辑简历资料 · 简历填充小助手</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <span class="logo"><svg viewBox="0 0 24 24"><path d="M7 3.75h7.6L19 8.15v12.1H7z"/><path d="M14.5 3.9v4.5H19M9.8 12h6.4M9.8 15h6.4M9.8 18h3.8"/></svg></span>
+        <span><strong>简历填充小助手</strong><small>你的多版本网申资料库</small></span>
+      </div>
+      <div id="saveState" class="save-state">尚未保存</div>
+      <button id="saveButton" class="save-button">保存资料</button>
+    </header>
+
+    <main class="layout">
+      <aside>
+        <p class="eyebrow">资料目录</p>
+        <nav id="sectionNav"></nav>
+        <div class="privacy-card">
+          <svg viewBox="0 0 24 24"><path d="M7 11V8a5 5 0 0 1 10 0v3M5 11h14v10H5z"/></svg>
+          <strong>本地隐私保护</strong>
+          <p>资料仅保存在当前浏览器，不会上传到服务器。</p>
+        </div>
+        <div class="data-actions">
+          <button id="exportButton">导出备份</button>
+          <button id="importButton">导入备份</button>
+          <button id="clearAnswerMemory" class="wide-action">清除已确认的补充答案</button>
+          <input id="importFile" type="file" accept="application/json,.json" hidden />
+        </div>
+      </aside>
+
+      <section class="content">
+        <div class="intro">
+          <span class="step">资料设置</span>
+          <h1>管理并完善你的多版简历</h1>
+          <p>不同岗位可以使用不同版本；每个新版本都从重新上传并解析一份简历开始。</p>
+        </div>
+        <section class="version-manager">
+          <div class="version-copy"><span class="version-icon">V</span><div><h2>当前简历版本</h2><p id="activeResumeSource">正在读取版本信息…</p></div></div>
+          <select id="profileVersionSelect" aria-label="切换简历版本"></select>
+          <button id="newProfileVersion" class="version-primary" type="button">＋ 新建版本并上传</button>
+          <button id="renameProfileVersion" type="button">重命名</button>
+          <button id="deleteProfileVersion" class="danger-action" type="button">删除</button>
+        </section>
+        <section class="resume-import-card">
+          <div class="import-heading">
+            <span class="import-icon"><svg viewBox="0 0 24 24"><path d="M12 16V4M7.5 8.5 12 4l4.5 4.5M5 14v5h14v-5"/></svg></span>
+            <div><h2>导入并解析简历</h2><p>支持 PDF、DOCX 和 TXT，文件仅在当前浏览器中处理</p></div>
+            <span class="local-badge">本地解析</span>
+          </div>
+          <button id="resumeDropzone" class="dropzone" type="button">
+            <svg viewBox="0 0 24 24"><path d="M7 3.75h7.6L19 8.15v12.1H7z"/><path d="M14.5 3.9v4.5H19M9.5 14h5M12 11.5v5"/></svg>
+            <span><strong>拖拽简历到这里，或点击选择文件</strong><small>单个文件不超过 15 MB；暂不支持旧版 .doc 文件</small></span>
+          </button>
+          <input id="resumeFile" type="file" accept=".pdf,.docx,.txt,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,text/plain" hidden />
+          <div id="parseProgress" class="parse-progress" hidden>
+            <span class="spinner"></span><div><strong id="parseProgressTitle">正在读取简历…</strong><p id="parseProgressText">解析过程不会上传文件</p></div>
+          </div>
+          <div id="parseResult" class="parse-result" hidden>
+            <span id="parseResultIcon" class="result-check"><svg viewBox="0 0 24 24"><path d="m6 12.5 4 4L18.5 8"/><circle cx="12" cy="12" r="9"/></svg></span>
+            <div class="result-copy"><strong id="parseResultTitle">解析完成</strong><p id="parseResultText"></p><div id="parseBadges" class="parse-badges"></div></div>
+            <button id="chooseAnotherResume" type="button">重新导入</button>
+          </div>
+        </section>
+        <form id="profileForm" autocomplete="off"></form>
+      </section>
+    </main>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="vendor/mammoth/mammoth.browser.min.js"></script>
+    <script src="profile-schema.js"></script>
+    <script src="options.js"></script>
+    <script type="module" src="resume-import.js"></script>
+  </body>
+</html>

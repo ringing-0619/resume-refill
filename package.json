@@ -1,0 +1,20 @@
+{
+  "name": "resume-refill",
+  "private": true,
+  "scripts": {
+    "demo": "node scripts/serve.mjs",
+    "test": "node --test tests/*.test.cjs",
+    "check": "node scripts/check.mjs",
+    "build:demo": "node scripts/build-demo.mjs",
+    "package": "python3 scripts/package.py"
+  },
+  "devDependencies": {
+    "jsdom": "^29.1.1"
+  },
+  "version": "0.12.4",
+  "description": "A local-first Chrome extension for resume versions and application forms, with a fictional interactive demo.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.14.0"
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "resumeProfiles": [
+    {
+      "id": "demo-data",
+      "name": "数据分析岗",
+      "profile": {
+        "personal": {
+          "fullName": "Alex Lin",
+          "firstName": "Alex",
+          "lastName": "Lin",
+          "email": "alex.lin@example.com",
+          "city": "上海",
+          "headline": "Data Analyst",
+          "summary": "Turn complex questions into clear decisions with SQL, Python and thoughtful analysis."
+        },
+        "education": [
+          {
+            "school": "Example University",
+            "degree": "硕士研究生",
+            "major": "Business Analytics",
+            "studyMode": "全日制",
+            "startDate": "2024-09",
+            "endDate": "2026-06"
+          },
+          {
+            "school": "Sample Institute",
+            "degree": "大学本科",
+            "major": "Information Systems",
+            "studyMode": "全日制",
+            "startDate": "2020-09",
+            "endDate": "2024-06"
+          }
+        ],
+        "internship": [
+          {
+            "company": "Fictional Insights Studio",
+            "title": "Data Analyst Intern",
+            "startDate": "2025-06",
+            "endDate": "2025-08",
+            "description": "Built an exploratory dashboard and documented data quality checks for a fictional retail dataset."
+          }
+        ],
+        "project": [
+          {
+            "name": "Sample Retail Explorer",
+            "role": "Analyst",
+            "startDate": "2025-09",
+            "endDate": "2025-12",
+            "description": "Designed a reproducible SQL and Python workflow to explore a synthetic retail dataset."
+          }
+        ],
+        "additional": {
+          "skills": "SQL, Python, pandas, Tableau",
+          "languages": "中文, English"
+        }
+      },
+      "sourceFileName": "sample-data-analyst.txt"
+    },
+    {
+      "id": "demo-product",
+      "name": "产品岗",
+      "profile": {
+        "personal": {
+          "fullName": "Alex Lin",
+          "firstName": "Alex",
+          "lastName": "Lin",
+          "email": "alex.product@example.com",
+          "city": "上海",
+          "headline": "Product Associate",
+          "summary": "Connect user research with product decisions through structured discovery and clear prototypes."
+        },
+        "education": [
+          {
+            "school": "Example University",
+            "degree": "硕士研究生",
+            "major": "Product Management",
+            "studyMode": "全日制",
+            "startDate": "2024-09",
+            "endDate": "2026-06"
+          },
+          {
+            "school": "Sample Institute",
+            "degree": "大学本科",
+            "major": "Information Systems",
+            "studyMode": "全日制",
+            "startDate": "2020-09",
+            "endDate": "2024-06"
+          }
+        ],
+        "internship": [
+          {
+            "company": "Fictional Product Studio",
+            "title": "Product Intern",
+            "startDate": "2025-06",
+            "endDate": "2025-08",
+            "description": "Synthesized sample interview notes into a problem statement and a clickable prototype."
+          }
+        ],
+        "project": [
+          {
+            "name": "Sample Onboarding Lab",
+            "role": "Product Lead",
+            "startDate": "2025-09",
+            "endDate": "2025-12",
+            "description": "Mapped a fictional onboarding journey, prioritized usability questions and built a prototype."
+          }
+        ],
+        "additional": {
+          "skills": "User research, Figma, Prototyping, SQL",
+          "languages": "中文, English"
+        }
+      },
+      "sourceFileName": "sample-product.txt"
+    }
+  ],
+  "activeResumeProfileId": "demo-data",
+  "resumeProfile": {
+    "personal": {
+      "fullName": "Alex Lin",
+      "firstName": "Alex",
+      "lastName": "Lin",
+      "email": "alex.lin@example.com",
+      "city": "上海",
+      "headline": "Data Analyst",
+      "summary": "Turn complex questions into clear decisions with SQL, Python and thoughtful analysis."
+    },
+    "education": [
+      {
+        "school": "Example University",
+        "degree": "硕士研究生",
+        "major": "Business Analytics",
+        "studyMode": "全日制",
+        "startDate": "2024-09",
+        "endDate": "2026-06"
+      },
+      {
+        "school": "Sample Institute",
+        "degree": "大学本科",
+        "major": "Information Systems",
+        "studyMode": "全日制",
+        "startDate": "2020-09",
+        "endDate": "2024-06"
+      }
+    ],
+    "internship": [
+      {
+        "company": "Fictional Insights Studio",
+        "title": "Data Analyst Intern",
+        "startDate": "2025-06",
+        "endDate": "2025-08",
+        "description": "Built an exploratory dashboard and documented data quality checks for a fictional retail dataset."
+      }
+    ],
+    "project": [
+      {
+        "name": "Sample Retail Explorer",
+        "role": "Analyst",
+        "startDate": "2025-09",
+        "endDate": "2025-12",
+        "description": "Designed a reproducible SQL and Python workflow to explore a synthetic retail dataset."
+      }
+    ],
+    "additional": {
+      "skills": "SQL, Python, pandas, Tableau",
+      "languages": "中文, English"
+    }
+  },
+  "requiredAnswerMemory": {},
+  "fillSettings": {
+    "overwriteExisting": false,
+    "includeOptional": false
+  }
+}

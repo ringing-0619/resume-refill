@@ -1,0 +1,3 @@
+/* Keep hidden states functional when the extension's component display rules
+   override the browser's default [hidden] styling. No visual redesign. */
+[hidden] { display: none !important; }
