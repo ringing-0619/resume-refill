@@ -6,7 +6,7 @@
 
 **JavaScript · Chrome Manifest V3 · DOM 自动化 · PDF.js · Mammoth · Node.js**
 
-## 独立构建
+## 项目概览
 
 从想法提出、产品设计到开发落地，均由我独立完成，使用 AI 辅助进行 vibe coding。
 
