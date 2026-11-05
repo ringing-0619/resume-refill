@@ -7,7 +7,7 @@ The project is published at [ringing-0619/resume-refill](https://github.com/ring
 - **Name:** `resume-refill`
 - **Description:** `A local-first Chrome extension for resume versions and job application forms, with a bilingual interactive demo.`
 - **Topics:** `chrome-extension`, `javascript`, `manifest-v3`, `resume`, `form-autofill`, `local-first`, `portfolio`, `ai-assisted-development`
-- **README:** English by default, linked to `README.zh-CN.md`, following the one-sentence summary → project at a glance → animated demo → entry-points format of the AWG portfolio repository.
+- **README:** English by default, linked to `README.zh-CN.md`, organized as one-sentence summary → independent creation and capabilities → animated demo → entry points. The introduction makes clear that the idea, product design and implementation were completed independently with AI-assisted vibe coding.
 
 Both READMEs already embed `docs/images/resume-refill-demo.gif`. Uploading the source makes the animation available on the repository page; it does not need a running localhost server. The separately interactive version uses GitHub Pages, as described in [media and hosting](demo-media.md). The [complete repository map](repository-map.zh-CN.md) explains every source file and which local outputs to exclude.
 
