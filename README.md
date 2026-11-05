@@ -6,7 +6,7 @@ A local-first **Chrome extension** that manages resume versions and fills job ap
 
 **JavaScript · Chrome Manifest V3 · DOM automation · PDF.js · Mammoth · Node.js**
 
-## Overview
+## Extension overview
 
 I independently took Resume Refill from the initial idea through product design and implementation, using AI-assisted vibe coding.
 
