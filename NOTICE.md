@@ -1,6 +1,6 @@
 # Project attribution
 
-Resume Refill is an independently built personal project by Ringing Song, developed with AI assistance. The public edition preserves the working extension's core code and version, reorganizes it under `extension/`, and adds a fictional interactive demo, documentation, checks, tests and packaging.
+Resume Refill is a Chrome extension built entirely through vibe coding. The public edition preserves the working extension's core code and version, reorganizes it under `extension/`, and adds a fictional interactive demo, documentation, checks, tests and packaging.
 
 The demo UI is a showcase of selected extension behavior. Its fictional recruiting company, candidate, schools and projects do not represent actual users, employers or deployment partners. No adoption numbers, time-saving measurements or broad compatibility claims are asserted.
 

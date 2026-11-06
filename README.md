@@ -4,16 +4,16 @@ English | [简体中文](README.zh-CN.md)
 
 A local-first **Chrome extension** that manages resume versions and fills job application forms for review before submission.
 
+This extension was built entirely through vibe coding.
+
 **JavaScript · Chrome Manifest V3 · DOM automation · PDF.js · Mammoth · Node.js**
 
-## Extension overview
+## Key features
 
-I independently took Resume Refill from the initial idea through product design and implementation, using AI-assisted vibe coding.
-
-- **Task:** Reduce repeated resume entry across recruiting websites with different field labels, controls and experience sections.
-- **Resume workflow:** Import **PDF, DOCX or TXT** locally, review the extracted information, and save separate versions for different roles.
-- **Form automation:** Match Chinese and English labels, handle supported dropdowns and dates, expand repeated sections, and read values back after filling.
-- **User control:** Preserve existing answers by default, request confirmation for uncertain required fields, and leave application submission to the applicant.
+- Multiple resume versions: Save role-specific profiles and choose which version to use for each application.
+- Local resume import: Parse PDF, DOCX and TXT files in the browser, then review and edit the extracted information before saving.
+- Form autofill: Recognize Chinese and English field labels, fill supported inputs, dropdowns, dates and repeated experience sections, and verify the results after writing.
+- Review controls: Preserve existing answers by default, request confirmation for uncertain required fields, and leave final submission to the user.
 
 ## Demo
 
@@ -25,7 +25,7 @@ I independently took Resume Refill from the initial idea through product design 
 
 The interactive version is hosted on **GitHub Pages** and runs in the visitor's browser without installing the extension. Click the GIF above to open it. The animation plays inside the README; interactive controls run on the demo page. [Demo media and hosting](docs/demo-media.md)
 
-## Explore the project
+## Documentation
 
 | Content | Entry points |
 |---|---|
